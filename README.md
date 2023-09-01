@@ -6,7 +6,7 @@ API: TBD
 
 User Experience: The user has the ability to search through a list of songs and select one to test there typing skills. The song lyrics will appear on the screen prompting the user to begin the type test. When the user clicks the first key, the test begins and the letters on the screen will highlight indicating a correct or incorrect key. Upon completion of the test a dashboard will appear displaying the users typing statistics. 
 
-MVP: Display the lyrics of the selected song on the screen. Allows the user to type in lyrics and display statistics.
+MVP: Display the lyrics of the selected song on the screen. Allows the user to type in lyrics and display statistics. Add additional songs to existing database using a submit form.
 
 Stretch Goals: Give an option to play the selected song during the test. Give user option to vary song speed with typing speed. Render additional statistics. 
 
