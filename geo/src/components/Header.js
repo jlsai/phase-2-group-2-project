@@ -1,7 +1,16 @@
 function Header() {
   return (
     <div className="header">
-      <h1 className="header-title">GEO App</h1>
+      <img src=""></img>
+      <nav>
+				<h1>GEO</h1>
+				<ul>
+					<li><a href="#">link1</a></li>
+					<li><a href="#">link2</a></li>
+					<li><a href="#">link3</a></li>
+					<li><a href="#">link4</a></li>
+				</ul>
+			</nav>
     </div>
   );
 }

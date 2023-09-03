@@ -1,7 +1,11 @@
 function Search() {
   return (
-    <div>
-      <h1>Search</h1>
+    <div className="searchbar">
+      <label htmlFor="search">Search Landmarks:</label>
+      <input 
+        type="text"
+        id="search"
+        placeholder="Type a name to search"/>
     </div>
   )
 }
