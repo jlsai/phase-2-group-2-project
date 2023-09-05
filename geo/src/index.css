@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
 }
 
 li, a {
