@@ -13,11 +13,11 @@ function App() {
     <Header />
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/landmarks" element={<LandmarkPage />}/>
-        <Route path="/visted" element={<Visited />}/>
-        <Route path="/profile" element={<Profile />}/>
-        <Route path="/Favorites" element={<Favorites />}/>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/landmarks" element={<LandmarkPage/>}/>
+        <Route path="/visited" element={<Visited/>}/>
+        <Route path="/profile" element={<Profile/>}/>
+        <Route path="/Favorites" element={<Favorites/>}/>
 
         </Routes>
     </div>
