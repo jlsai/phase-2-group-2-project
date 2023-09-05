@@ -1,0 +1,52 @@
+@font-face {
+    font-family: Nexa-Heavy;
+    src: url(../fonts/Nexa-Heavy.ttf);
+}
+
+@font-face {
+    font-family: Nexa-ExtraLight;
+    src: url(../fonts/Nexa-ExtraLight.ttf);
+}
+
+.nav {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    height: 6vh;
+    border-bottom: solid 3px rgb(223, 223, 223);
+
+}
+
+.Geo {
+    font-family: Nexa-Heavy;
+    font-size: 30px;
+    padding-left: 0px;
+    display: flex;
+}
+
+.navmenu {
+    font-family: Nexa-ExtraLight;
+    display: flex; 
+    align-items: center; 
+    position: relative;
+    padding-right: 700px;
+    list-style:none;
+}
+
+.navitem {
+    margin-right: 20px;
+    transition: background-color 0.3s; 
+}
+
+.navitem:hover {
+    background-color: #ccc;
+    padding-right: 5px 10px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin-left: 50px; /* Add margin to separate from .Geo */
+    width: 50px; 
+    height: 50px; 
+  }

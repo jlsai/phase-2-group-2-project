@@ -1,0 +1,11 @@
+/* File: font.css */
+@font-face {
+    font-family: 'Nexa-ExtraLight';
+    src: local('Nexa-ExtraLight'),
+         url('./Nexa-ExtraLight.ttf') format('ttf'),
+}
+@font-face {
+    font-family: 'Nexa-Heavy';
+    src: local('Nexa-Heavy'),
+         url('./Nexa-Heavy.ttf') format('ttf'),
+}
