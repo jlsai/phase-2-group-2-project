@@ -1,3 +1,4 @@
+import landmarks from '../images/landmarks.png'
 import Home from './Home';
 import Header from './Header';
 import LandmarkPage from './LandmarkPage';
