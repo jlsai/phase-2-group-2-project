@@ -7,7 +7,7 @@ import "./Header.css";
 
 function Header() {
   return (
-    <div className="header">
+    <div className="Header">
       <nav className="nav">
 		<div>
 		<img src={landmarks} className="logo"></img>
