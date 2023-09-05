@@ -20,16 +20,16 @@ function Header() {
         <div>
           <ul className="navmenu">
             <li>
-			<Link to="#" className="navitem">Landmarks</Link>
+			<Link to="/landmarks" className="navitem">Landmarks</Link>
             </li>
             <li>
-			<Link to="#" className="navitem">Favorites</Link>
+			<Link to="/Favorites" className="navitem">Favorites</Link>
             </li>
             <li>
-			<Link to="#" className="navitem">My visited</Link>
+			<Link to="/visited" className="navitem">My visited</Link>
             </li>
             <li>
-			<Link to="#" className="navitem">Profile</Link>
+			<Link to="/profile" className="navitem">Profile</Link>
             </li>
           </ul>
         </div>
