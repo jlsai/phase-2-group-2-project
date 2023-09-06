@@ -1,4 +1,6 @@
+
 import React, {useState} from "react"
+
 import './LandmarkCard.css'; 
 
 function LandmarkCard({name, desc, country, image, linkUrl, favorited, id, handleFavorite, deleteFavoriteLocation}) {
