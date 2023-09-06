@@ -3,21 +3,11 @@
     src: url(../fonts/Nexa-Heavy.ttf);
 }
 
-
 body {
-    margin: 0;
+    margin: auto auto;
     padding: 0;
 }
 
-.homeText {
-    font-family: Nexa-Heavy;
-    font-size: 40px;
-    position: absolute;
-    display: flex;
-    top: 39%;
-    left: 47%;
-    text-align: center;
-}
 .middle {
     position: absolute;
     display: flex;

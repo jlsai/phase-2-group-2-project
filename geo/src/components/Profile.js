@@ -1,6 +1,8 @@
-function Profile() {
+function Profile({currFavorites}) {
     return (
-      <div>Profile</div>
+      <div>
+        <h2>FAVORITED LOCATIONS: {currFavorites}</h2>
+      </div>
 
     )
   }
