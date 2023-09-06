@@ -9,7 +9,6 @@ function LandmarkPage({modifiedLocations, searchChange, handleFavorite, search, 
 		<div>
 			<Search search={search} searchChange={searchChange}/>
 			<LandmarkList locations={modifiedLocations} handleFavorite={handleFavorite} visited={visited}/>
-			<NewLandmarkForm />
 		</div>
 	)
 }
