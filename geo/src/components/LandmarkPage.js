@@ -35,7 +35,6 @@ function LandmarkPage() {
 		<div>
 		<Search search={search} searchChange={searchChange}/>
 		<LandmarkList locations={modifiedLocations} handleFavorite={handleFavorite}/>
-		<NewLandmarkForm />
 		</div>
 	)
 }

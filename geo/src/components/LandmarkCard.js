@@ -1,5 +1,9 @@
+import React from 'react';
+import './LandmarkCard.css'; 
+
 function LandmarkCard({name, desc, country, image, linkUrl, favorited, id, handleFavorite}) {
 
+  
   function handleClick() {
     fetch("http://127.0.0.1:6001/locations/" + id, {
       method: "PATCH",
@@ -31,13 +35,14 @@ function LandmarkCard({name, desc, country, image, linkUrl, favorited, id, handl
       }
     })
   }
+  
 
   return (
-    <div>
+    <div className="cardStyle">
       <h2>{name}</h2>
-      <img src={image} alt={name}></img>
+      <img className="cardImg" src={image} alt={name}></img>
+      <h3>{country}</h3>
       <p>{desc}</p>
-      <h5>{country}</h5>
       <link href={linkUrl}></link>
       <button onClick={handleClick}>{favorited ? "♥ UNFAVORITE" : "♡ FAVORITE"}</button>
     </div>

@@ -1,0 +1,44 @@
+/* search.css */
+@font-face {
+    font-family: Nexa-Heavy;
+    src: url(../fonts/Nexa-Heavy.ttf);
+  }
+  
+  @font-face {
+    font-family: Nexa-ExtraLight;
+    src: url(../fonts/Nexa-ExtraLight.ttf);
+  }
+  
+  .searchContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .searchbar {
+    padding-top: 30px;
+  }
+  
+  .style {
+    font-family: Nexa-ExtraLight;
+    border-radius: 15px;
+    width: 200px;
+    height: 30px;
+    padding-left: 15px;
+    margin-bottom: 15px; /* Add margin to separate input and button */
+  }
+  
+  .FormBtn {
+    font-family: Nexa-ExtraLight;
+    font-size: 20px;
+    border-radius: 5px;
+    color: rgb(134, 143, 143);
+    transition: background-color 0.3s;
+    padding: 5px 10px; /* Add padding to button */
+  }
+  
+  .FormBtn:hover {
+    background-color: #ccc;
+  }
+  

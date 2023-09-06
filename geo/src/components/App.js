@@ -6,6 +6,7 @@ import { Route, Routes} from "react-router-dom"
 import Visited from './Visited';
 import Profile from './Profile';
 import Favorites from './Favorites';
+import NewLandmarkForm from './NewLandmarkForm';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Route path="/visited" element={<Visited/>}/>
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/Favorites" element={<Favorites/>}/>
+        <Route path="/Form" element={<NewLandmarkForm/>}/>
+
 
         </Routes>
     </div>

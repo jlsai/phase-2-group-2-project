@@ -17,7 +17,7 @@ function LandmarkList({locations,  handleFavorite}) {
   })
 
   return (
-    <div>{displayLocations}</div>
+    <div className="card-container">{displayLocations}</div>
   )
 }
 
