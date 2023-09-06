@@ -13,6 +13,7 @@ import NewLandmarkForm from './NewLandmarkForm';
 function App() {
 
   const [locations, setLocations] = useState([]);
+  const [favLocations, setFavLocations] = useState([]) 
   const [currFavorites, setCurrFavorites] = useState(0);
 	const [search, setSearch] = useState("");
 
@@ -24,11 +25,30 @@ function App() {
 		})
 	}, [])
 
+  function setNewFavLocations(newFavLocations) {
+    setFavLocations(newFavLocations)
+  }
+
+  function deleteFavoriteLocation(deletedLocation) {
+    const newFavLocations = favLocations.filter(location => {
+      return location.id !== deletedLocation.id;
+    })
+    setFavLocations(newFavLocations)
+  }
+
 	function handleFavorite(newLocation) {
+    console.log(newLocation)
+    console.log(newLocation.favorited)
+    console.log(locations);
+    console.log(locations[newLocation.id - 1])
 		locations[newLocation.id - 1].favorited = newLocation.favorited;
 		setLocations([...locations])
     newLocation.favorited ? setCurrFavorites(currFavorites + 1) : setCurrFavorites(currFavorites - 1)
 	}
+
+  function addNewLocation(newLocation) {
+    setLocations([...locations, newLocation])
+  }
 
   console.log(currFavorites)
 
@@ -50,10 +70,10 @@ function App() {
         <Route path="/" element={<Home/>}/>
 
         <Route path="/visited" element={<Visited/>}/>
-        <Route path="/Form" element={<NewLandmarkForm/>}/>
-        <Route path="/landmarks" element={<LandmarkPage modifiedLocations={modifiedLocations} searchChange={searchChange} handleFavorite={handleFavorite} search={search}/>}/>
+        <Route path="/Form" element={<NewLandmarkForm addNewLocation={addNewLocation}/>}/>
+        <Route path="/landmarks" element={<LandmarkPage modifiedLocations={modifiedLocations} searchChange={searchChange} handleFavorite={handleFavorite} search={search} deleteFavoriteLocation={deleteFavoriteLocation}/>}/>
         <Route path="/profile" element={<Profile currFavorites={currFavorites}/>}/>
-        <Route path="/Favorites" element={<Favorites handleFavorite={handleFavorite}/>}/>
+        <Route path="/Favorites" element={<Favorites handleFavorite={handleFavorite} setNewFavLocations={setNewFavLocations} deleteFavoriteLocation={deleteFavoriteLocation} favLocations={favLocations}/>}/>
 
         </Routes>
     </div>
