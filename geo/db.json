@@ -12696,7 +12696,7 @@
     },
     {
       "id": 850,
-      "favorited": true,
+      "favorited": false,
       "name_en": "Tower of Hercules",
       "short_description_en": "The Tower of Hercules has served as a lighthouse and landmark at the entrance of La Coru&ntilde;a harbour in north-western Spain since the late 1st century A.D. when the Romans built the Farum Brigantium. The Tower, built on a 57 metre high rock, rises",
       "longitude": -8.4063888889,
@@ -12741,7 +12741,7 @@
     },
     {
       "id": 853,
-      "favorited": true,
+      "favorited": false,
       "name_en": "Sacred City of Anuradhapura",
       "short_description_en": "This sacred city was established around a cutting from the 'tree of enlightenment', the Buddha's fig tree, brought there in the 3rd century B.C. by Sanghamitta, the founder of an order of Buddhist nuns. Anuradhapura, a Ceylonese political and religious",
       "longitude": 80.38333333,
@@ -15755,34 +15755,7 @@
   ],
   "favorites": [
     {
-      "id": 1,
-      "favorited": true,
-      "name_en": "Cultural Landscape and Archaeological Remains of the Bamiyan Valley",
-      "short_description_en": "The cultural landscape and archaeological remains of the Bamiyan Valley represent the artistic and religious developments which from the 1st to the 13th centuries characterized ancient Bakhtria, integrating various cultural influences into the Gandhara",
-      "longitude": 67.82525,
-      "latitude": 34.84694,
-      "category": "Cultural",
-      "states_name_en": "Afghanistan",
-      "region_en": "Asia and the Pacific",
-      "iso_code": "af",
-      "udnp_code": "afg",
-      "image": "https://res.cloudinary.com/dz6n7aosh/image/upload/v1487664632/unesco/208.jpg",
-      "link": "http://whc.unesco.org/en/list/208"
-    },
-    {
-      "id": 2,
-      "favorited": true,
-      "name_en": "Minaret and Archaeological Remains of Jam",
-      "short_description_en": "The 65m-tall Minaret of Jam is a graceful, soaring structure, dating back to the 12th century. Covered in elaborate brickwork with a blue tile inscription at the top, it is noteworthy for the quality of its architecture and decoration, which represent",
-      "longitude": 64.51605556,
-      "latitude": 34.39655556,
-      "category": "Cultural",
-      "states_name_en": "Afghanistan",
-      "region_en": "Asia and the Pacific",
-      "iso_code": "af",
-      "udnp_code": "afg",
-      "image": "https://res.cloudinary.com/dz6n7aosh/image/upload/v1487664632/unesco/211.jpg",
-      "link": "http://whc.unesco.org/en/list/211"
+
     }
   ]
 }

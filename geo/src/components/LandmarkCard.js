@@ -1,7 +1,9 @@
+
 import React from 'react';
 import './LandmarkCard.css'; 
+import React, {useState} from "react"
 
-function LandmarkCard({name, desc, country, image, linkUrl, favorited, id, handleFavorite}) {
+function LandmarkCard({name, desc, country, image, linkUrl, favorited, id, handleFavorite, deleteFavoriteLocation}) {
 
   
   function handleClick() {
@@ -13,7 +15,7 @@ function LandmarkCard({name, desc, country, image, linkUrl, favorited, id, handl
     .then(response => response.json())
     .then(data => {
       handleFavorite(data)
-
+      
       if (data.favorited) {
         fetch("http://127.0.0.1:6001/favorites", {
           method: "POST",
@@ -30,7 +32,7 @@ function LandmarkCard({name, desc, country, image, linkUrl, favorited, id, handl
         })
         .then(response => response.json())
         .then(() => {
-          console.log("Deleted")
+          deleteFavoriteLocation(data)
         })
       }
     })
@@ -45,6 +47,7 @@ function LandmarkCard({name, desc, country, image, linkUrl, favorited, id, handl
       <p>{desc}</p>
       <link href={linkUrl}></link>
       <button onClick={handleClick}>{favorited ? "♥ UNFAVORITE" : "♡ FAVORITE"}</button>
+      <button></button>
     </div>
   )
 }
