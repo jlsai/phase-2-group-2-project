@@ -5,8 +5,6 @@ import landmarks from '../images/landmarks.png'
 import Home from './Home';
 import Header from './Header';
 import LandmarkPage from './LandmarkPage';
-import Visited from './Visited';
-import Profile from './Profile';
 import Favorites from './Favorites';
 import NewLandmarkForm from './NewLandmarkForm';
 import Details from "./Details";
@@ -87,10 +85,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
 
-        <Route path="/visited" element={<Visited/>}/>
         <Route path="/Form" element={<NewLandmarkForm addNewLocation={addNewLocation}/>}/>
         <Route path="/landmarks" element={<LandmarkPage modifiedLocations={modifiedLocations} searchChange={searchChange} handleFavorite={handleFavorite} search={search} deleteFavoriteLocation={deleteFavoriteLocation} handleRemove={handleRemove}/>}/>
-        <Route path="/profile" element={<Profile currFavorites={currFavorites}/>}/>
         <Route path="/Favorites" element={<Favorites handleFavorite={handleFavorite} setNewFavLocations={setNewFavLocations} deleteFavoriteLocation={deleteFavoriteLocation} favLocations={favLocations}/>}/>
         <Route path="/landmarks/:id" element={<Details />}/>
         </Routes>
