@@ -28,16 +28,6 @@ function Header() {
                 Favorites
               </Link>
             </li>
-            <li>
-              <Link to="/visited" className="navitem">
-                My visited
-              </Link>
-            </li>
-            <li>
-              <Link to="/profile" className="navitem">
-                Profile
-              </Link>
-            </li>
           </ul>
         </div>
       </nav>

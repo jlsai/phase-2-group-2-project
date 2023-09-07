@@ -47,12 +47,18 @@ function LandmarkCard({ name, desc, country, image, linkUrl, favorited, id, hand
       <h3>{country}</h3>
       <p>{desc}</p>
       <link href={linkUrl}></link>
+
       <button className={`favButton ${favorited ? 'favorited' : ''}`} onClick={handleClick}>
         {favorited ? "♥ UNFAVORITE" : "♡ FAVORITE"}
       </button>
       <div>
         <button className="deleteButton" onClick={removeLoc}> DELETE</button>
       </div>
+       <Link to={`/landmarks/${id}`}>View more</Link>
+
+     
+
+
     </div>
   )
 }
