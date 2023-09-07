@@ -1,0 +1,52 @@
+/* Details.css */
+@font-face {
+  font-family: Nexa-Heavy;
+  src: url(../fonts/Nexa-Heavy.ttf);
+}
+
+@font-face {
+  font-family: Nexa-ExtraLight;
+  src: url(../fonts/Nexa-ExtraLight.ttf);
+} 
+.details-container {
+  font-family: Nexa-Heavy;
+  max-width: 600px;
+  margin-left: 300px;
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.details-container h1 {
+  background-color: #f9f9f9;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.details-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.details-container p {
+  background-color: #f9f9f9;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.details-container h4 {
+  background-color: #f9f9f9;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.details-container h5 {
+  background-color: #f9f9f9;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
