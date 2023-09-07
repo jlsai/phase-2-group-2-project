@@ -1,5 +1,5 @@
-import { Route, Routes } from "react-router-dom"
-import React, { useState, useEffect } from "react"
+import { Route, Routes} from "react-router-dom"
+import React, {useState, useEffect} from "react"
 
 import landmarks from '../images/landmarks.png'
 import Home from './Home';
@@ -14,17 +14,17 @@ import Details from "./Details";
 function App() {
 
   const [locations, setLocations] = useState([]);
-  const [favLocations, setFavLocations] = useState([])
+  const [favLocations, setFavLocations] = useState([]) 
   const [currFavorites, setCurrFavorites] = useState(0);
-  const [search, setSearch] = useState("");
+	const [search, setSearch] = useState("");
 
-  useEffect(() => {
-    fetch("http://localhost:6001/locations")
-      .then(response => response.json())
-      .then(data => {
-        setLocations(data);
-      })
-  }, [])
+	useEffect(() => {
+		fetch("http://localhost:6001/locations")
+		.then(response => response.json())
+		.then(data => {
+			setLocations(data);
+		})
+	}, [])
 
   function setNewFavLocations(newFavLocations) {
     setFavLocations(newFavLocations)
@@ -35,26 +35,6 @@ function App() {
       return location.id !== deletedLocation.id;
     })
     setFavLocations(newFavLocations)
-  }
-
-  function handleFavorite(newLocation) {
-    console.log(newLocation)
-    console.log(newLocation.favorited)
-    console.log(locations);
-    console.log(locations[newLocation.id - 1])
-    locations[newLocation.id - 1].favorited = newLocation.favorited;
-    setLocations([...locations])
-    newLocation.favorited ? setCurrFavorites(currFavorites + 1) : setCurrFavorites(currFavorites - 1)
-  }
-
-  function addNewLocation(newLocation) {
-    setLocations([...locations, newLocation])
-  }
-
-  console.log(currFavorites)
-
-  function searchChange(newSearch) {
-    setSearch(newSearch);
   }
 
   const handleRemove = (id) => {
@@ -74,48 +54,48 @@ function App() {
       })
   }
 
-  const modifiedLocations = locations.filter(location => {
-    return location.name_en.toLowerCase().includes(search.toLowerCase())
-  })
+	function handleFavorite(newLocation) {
+    console.log(newLocation)
+    console.log(newLocation.favorited)
+    console.log(locations);
+    console.log(locations[newLocation.id - 1])
+		locations[newLocation.id - 1].favorited = newLocation.favorited;
+		setLocations([...locations])
+    newLocation.favorited ? setCurrFavorites(currFavorites + 1) : setCurrFavorites(currFavorites - 1)
+	}
+
+  function addNewLocation(newLocation) {
+    setLocations([...locations, newLocation])
+  }
+
+  console.log(currFavorites)
+
+	function searchChange(newSearch) {
+		setSearch(newSearch);
+	}
+
+	const modifiedLocations = locations.filter(location => {
+		return location.name_en.toLowerCase().includes(search.toLowerCase())
+	})
 
   console.log(locations)
 
   return (
+    <> 
+    <Header />
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Home/>}/>
 
-    <>
-      <Header />
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-
-          <Route path="/visited" element={<Visited />} />
-          <Route path="/Form"
-            element={<NewLandmarkForm
-              addNewLocation={addNewLocation}
-            />} />
-          <Route path="/landmarks"
-            element={<LandmarkPage
-              modifiedLocations={modifiedLocations}
-              searchChange={searchChange}
-              handleFavorite={handleFavorite}
-              search={search}
-              deleteFavoriteLocation={deleteFavoriteLocation}
-              handleRemove={handleRemove}
-            />}
-          />
-          <Route path="/profile"
-            element={<Profile currFavorites={currFavorites} />}
-          />
-          <Route path="/Favorites"
-            element={<Favorites handleFavorite={handleFavorite}
-              setNewFavLocations={setNewFavLocations}
-              deleteFavoriteLocation={deleteFavoriteLocation}
-              favLocations={favLocations} />} />
-
-
+        <Route path="/visited" element={<Visited/>}/>
+        <Route path="/Form" element={<NewLandmarkForm addNewLocation={addNewLocation}/>}/>
+        <Route path="/landmarks" element={<LandmarkPage modifiedLocations={modifiedLocations} searchChange={searchChange} handleFavorite={handleFavorite} search={search} deleteFavoriteLocation={deleteFavoriteLocation} handleRemove={handleRemove}/>}/>
+        <Route path="/profile" element={<Profile currFavorites={currFavorites}/>}/>
+        <Route path="/Favorites" element={<Favorites handleFavorite={handleFavorite} setNewFavLocations={setNewFavLocations} deleteFavoriteLocation={deleteFavoriteLocation} favLocations={favLocations}/>}/>
+        <Route path="/landmarks/:id" element={<Details />}/>
         </Routes>
-      </div>
-
+    </div>
+    
     </>
   );
 }
