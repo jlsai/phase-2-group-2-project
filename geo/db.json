@@ -15575,6 +15575,7 @@
   ],
   "favorites": [
     {
+
       "id": 12,
       "favorited": true,
       "name_en": "Madriu-Perafita-Claror Valley",
@@ -15708,6 +15709,7 @@
       "udnp_code": "arg",
       "image": "https://res.cloudinary.com/dz6n7aosh/image/upload/v1487664632/unesco/936.jpg",
       "link": "http://whc.unesco.org/en/list/936"
+
     }
   ]
 }
