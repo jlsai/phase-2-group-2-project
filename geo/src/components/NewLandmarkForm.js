@@ -34,8 +34,8 @@ function NewLandmarkForm({addNewLocation}) {
     })
     .then(response => response.json())
     .then(data => {
-      console.log(data)
       addNewLocation(data)
+      setLocation(initial)
     })
   }
 
