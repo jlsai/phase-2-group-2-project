@@ -20,8 +20,8 @@
 .Geo {
     font-family: Nexa-Heavy;
     font-size: 30px;
-    padding-left: 0px;
     display: flex;
+    padding-right: 50px;
 }
 
 .navmenu {
@@ -29,7 +29,7 @@
     display: flex; 
     align-items: center; 
     position: relative;
-    padding-right: 700px;
+    padding-right: 1000px;
     list-style:none;
 }
 
