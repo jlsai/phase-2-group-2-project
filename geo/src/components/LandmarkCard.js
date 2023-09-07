@@ -1,12 +1,8 @@
-
-import React, {useState} from "react"
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
-
 import './LandmarkCard.css';
 
 function LandmarkCard({ name, desc, country, image, linkUrl, favorited, id, handleFavorite, deleteFavoriteLocation, handleRemove }) {
-
   const removeLoc = () => {
     handleRemove(id)
   }
@@ -41,8 +37,8 @@ function LandmarkCard({ name, desc, country, image, linkUrl, favorited, id, hand
             })
         }
       })
-  }
 
+  }
 
   return (
     <div className="cardStyle">
@@ -51,10 +47,12 @@ function LandmarkCard({ name, desc, country, image, linkUrl, favorited, id, hand
       <h3>{country}</h3>
       <p>{desc}</p>
       <link href={linkUrl}></link>
-      <button onClick={handleClick}>{favorited ? "♥ UNFAVORITE" : "♡ FAVORITE"}</button>
-
-      <button onClick={removeLoc}>DELETE</button>
-
+      <button className={`favButton ${favorited ? 'favorited' : ''}`} onClick={handleClick}>
+        {favorited ? "♥ UNFAVORITE" : "♡ FAVORITE"}
+      </button>
+      <div>
+        <button className="deleteButton" onClick={removeLoc}> DELETE</button>
+      </div>
     </div>
   )
 }
