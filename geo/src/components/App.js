@@ -9,6 +9,7 @@ import Visited from './Visited';
 import Profile from './Profile';
 import Favorites from './Favorites';
 import NewLandmarkForm from './NewLandmarkForm';
+import Details from "./Details";
 
 function App() {
 
@@ -74,7 +75,7 @@ function App() {
         <Route path="/landmarks" element={<LandmarkPage modifiedLocations={modifiedLocations} searchChange={searchChange} handleFavorite={handleFavorite} search={search} deleteFavoriteLocation={deleteFavoriteLocation}/>}/>
         <Route path="/profile" element={<Profile currFavorites={currFavorites}/>}/>
         <Route path="/Favorites" element={<Favorites handleFavorite={handleFavorite} setNewFavLocations={setNewFavLocations} deleteFavoriteLocation={deleteFavoriteLocation} favLocations={favLocations}/>}/>
-
+        <Route path="/landmarks/:id" element={<Details />}/>
         </Routes>
     </div>
     
