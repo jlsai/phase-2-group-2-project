@@ -9,6 +9,7 @@ import Visited from './Visited';
 import Profile from './Profile';
 import Favorites from './Favorites';
 import NewLandmarkForm from './NewLandmarkForm';
+import Details from "./Details";
 
 function App() {
 
@@ -80,6 +81,7 @@ function App() {
   console.log(locations)
 
   return (
+
     <>
       <Header />
       <div className="App">
@@ -109,6 +111,7 @@ function App() {
               setNewFavLocations={setNewFavLocations}
               deleteFavoriteLocation={deleteFavoriteLocation}
               favLocations={favLocations} />} />
+
 
         </Routes>
       </div>

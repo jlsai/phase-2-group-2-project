@@ -32,7 +32,7 @@
     },
     {
       "id": 3,
-      "favorited": true,
+      "favorited": false,
       "name_en": "Historic Centres of Berat and Gjirokastra",
       "short_description_en": "Berat and Gjirokastra are inscribed as rare examples of an architectural character typical of the Ottoman period. Located in central Albania, Berat bears witness to the coexistence of various religious and cultural communities down the centuries. It fe",
       "longitude": 20.13333333,
@@ -47,7 +47,7 @@
     },
     {
       "id": 4,
-      "favorited": true,
+      "favorited": false,
       "name_en": "Butrint",
       "short_description_en": "Inhabited since prehistoric times, Butrint has been the site of a Greek colony, a Roman city and a bishopric. Following a period of prosperity under Byzantine administration, then a brief occupation by the Venetians, the city was abandoned in the late",
       "longitude": 20.02611111,
@@ -15706,34 +15706,9 @@
       "udnp_code": "zmb,zwe",
       "image": "https://res.cloudinary.com/dz6n7aosh/image/upload/v1487664632/unesco/509.jpg",
       "link": "http://whc.unesco.org/en/list/509"
-    },
-    {
-      "favorited": true,
-      "name_en": "DISNEY WORLD",
-      "short_description_en": "Fun place",
-      "longitude": "12",
-      "latitude": "12",
-      "category": "Super duper fun",
-      "states_name_en": "USA",
-      "region_en": "North America",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Cinderella_Castle.jpg/1200px-Cinderella_Castle.jpg",
-      "id": 1053
-    },
-    {
-      "favorited": true,
-      "name_en": "DISNEY WORLD",
-      "short_description_en": "Fun place",
-      "longitude": "12",
-      "latitude": "12",
-      "category": "Super duper fun",
-      "states_name_en": "USA",
-      "region_en": "North America",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Cinderella_Castle.jpg/1200px-Cinderella_Castle.jpg",
-      "id": 1054
     }
   ],
-  "favorites": [
-    {},
-    {}
-  ]
+
+  "favorites": []
+
 }

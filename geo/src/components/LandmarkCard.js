@@ -1,5 +1,7 @@
 
-import React, { useState } from "react"
+import React, {useState} from "react"
+import { Link } from "react-router-dom";
+
 
 import './LandmarkCard.css';
 
@@ -50,7 +52,9 @@ function LandmarkCard({ name, desc, country, image, linkUrl, favorited, id, hand
       <p>{desc}</p>
       <link href={linkUrl}></link>
       <button onClick={handleClick}>{favorited ? "♥ UNFAVORITE" : "♡ FAVORITE"}</button>
+
       <button onClick={removeLoc}>DELETE</button>
+
     </div>
   )
 }
