@@ -151,21 +151,6 @@
       "link": "http://whc.unesco.org/en/list/194"
     },
     {
-      "id": 11,
-      "favorited": false,
-      "name_en": "Kasbah of Algiers",
-      "short_description_en": "The Kasbah is a unique kind of medina, or Islamic city. It stands in one of the finest coastal sites on the Mediterranean, overlooking the islands where a Carthaginian trading-post was established in the 4th century BC. There are the remains of the cit",
-      "longitude": 3.06028,
-      "latitude": 36.78333,
-      "category": "Cultural",
-      "states_name_en": "Algeria",
-      "region_en": "Arab States",
-      "iso_code": "dz",
-      "udnp_code": "dza",
-      "image": "https://res.cloudinary.com/dz6n7aosh/image/upload/v1487664632/unesco/565.jpg",
-      "link": "http://whc.unesco.org/en/list/565"
-    },
-    {
       "id": 12,
       "favorited": false,
       "name_en": "Madriu-Perafita-Claror Valley",
@@ -1752,21 +1737,6 @@
       "udnp_code": "can",
       "image": "https://res.cloudinary.com/dz6n7aosh/image/upload/v1487664632/unesco/71.jpg",
       "link": "http://whc.unesco.org/en/list/71"
-    },
-    {
-      "id": 118,
-      "favorited": false,
-      "name_en": "S<U>G</U>ang Gwaay",
-      "short_description_en": "The village of Ninstints (Nans Dins) is located on a small island off the west coast of the Queen Charlotte Islands (Haida Gwaii). Remains of houses, together with carved mortuary and memorial poles, illustrate the Haida people's art and way of life. T",
-      "longitude": -131.2202778,
-      "latitude": 52.095,
-      "category": "Cultural",
-      "states_name_en": "Canada",
-      "region_en": "Europe and North America",
-      "iso_code": "ca",
-      "udnp_code": "can",
-      "image": "https://res.cloudinary.com/dz6n7aosh/image/upload/v1487664632/unesco/157.jpg",
-      "link": "http://whc.unesco.org/en/list/157"
     },
     {
       "id": 119,
@@ -9879,21 +9849,6 @@
       "link": "http://whc.unesco.org/en/list/573"
     },
     {
-      "id": 661,
-      "favorited": false,
-      "name_en": "W National Park of Niger",
-      "short_description_en": "The part of 'W' National Park that lies in Niger is situated in a transition zone between savannah and forest lands and represents important ecosystem characteristics of the West African Woodlands/Savannah Biogeographical Province. The site reflects th",
-      "longitude": 2.35,
-      "latitude": 12.35,
-      "category": "Natural",
-      "states_name_en": "Niger",
-      "region_en": "Africa",
-      "iso_code": "ne",
-      "udnp_code": "ner",
-      "image": "https://res.cloudinary.com/dz6n7aosh/image/upload/v1487664632/unesco/749.jpg",
-      "link": "http://whc.unesco.org/en/list/749"
-    },
-    {
       "id": 662,
       "favorited": false,
       "name_en": "Historic Centre of Agadez",
@@ -15779,8 +15734,6 @@
   ],
   "favorites": [
     {},
-    {
-
-    }
+    {}
   ]
 }
