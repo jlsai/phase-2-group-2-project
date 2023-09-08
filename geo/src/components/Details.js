@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react"
 import { useParams } from "react-router-dom";
+import MyMap from "./MyMap"
 
 function Details() {
 
@@ -12,9 +13,14 @@ function Details() {
         .then(data => {
             setLocation(data)
         })
-    })
+    }, [id])
+
+    if (Object.keys(location).length === 0) {
+        return null;
+    }
     
     return <div>
+        <MyMap lat={location.latitude} long={location.longitude}/>
         <h1>{location.name_en}</h1>
         <img src={location.image} alt={location.name_en}></img>
         <p>{location.short_description_en}</p>

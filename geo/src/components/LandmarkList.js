@@ -1,6 +1,6 @@
 import LandmarkCard from './LandmarkCard';
 
-function LandmarkList({locations,  handleFavorite, deleteFavoriteLocation}) {
+function LandmarkList({locations,  handleFavorite, deleteFavoriteLocation, deleteLocation}) {
 
   const displayLocations = locations.map(location => {
     return <LandmarkCard 
@@ -13,6 +13,7 @@ function LandmarkList({locations,  handleFavorite, deleteFavoriteLocation}) {
       favorited={location.favorited}
       handleFavorite={handleFavorite}
       deleteFavoriteLocation={deleteFavoriteLocation}
+      deleteLocation={deleteLocation}
       id={location.id}
     />
   })
