@@ -54,6 +54,7 @@ function LandmarkCard({ name, desc, country, image, linkUrl, favorited, id, hand
       <div>
         <button className="deleteButton" onClick={removeLoc}> DELETE</button>
       </div>
+    
        <Link to={`/landmarks/${id}`}>View</Link>
 
      

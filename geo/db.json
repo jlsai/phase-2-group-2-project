@@ -15541,20 +15541,6 @@
     }
   ],
   "favorites": [
-    {
-      "id": 14,
-      "favorited": true,
-      "name_en": "Los Glaciares National Park",
-      "short_description_en": "The Los Glaciares National Park is an area of exceptional natural beauty, with rugged, towering mountains and numerous glacial lakes, including Lake Argentino, which is 160 km long. At its farthest end, three glaciers meet to dump their effluvia into t",
-      "longitude": -73.24944,
-      "latitude": -50,
-      "category": "Natural",
-      "states_name_en": "Argentina",
-      "region_en": "Latin America and the Caribbean",
-      "iso_code": "ar",
-      "udnp_code": "arg",
-      "image": "https://res.cloudinary.com/dz6n7aosh/image/upload/v1487664632/unesco/145.jpg",
-      "link": "http://whc.unesco.org/en/list/145"
-    }
+    
   ]
 }

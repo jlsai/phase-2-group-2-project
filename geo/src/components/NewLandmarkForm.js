@@ -43,6 +43,7 @@ function NewLandmarkForm({addNewLocation}) {
 
   return (
     <div className="form">
+      
       <form onSubmit={handleSubmit}>
       <img src={landmarks} className="logo3"></img>
         <input className="form-child" name="name_en" type="text" placeholder="ENTER NAME" value={location.name_en} onChange={handleChange}></input>

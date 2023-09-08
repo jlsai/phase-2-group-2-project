@@ -13,6 +13,7 @@ function Details() {
         setLocation(data);
       });
   }, []);
+  
 
   return (
     <div className="details-container">
