@@ -61,19 +61,21 @@
 
 
 .deleteButton {
+  border: 2px solid rgb(255, 255, 255);
   font-size: 12px;
   padding: 5px;
-  background-color: crimson;
-  color: white;
+  background-color: rgb(226, 226, 226);
+  color: rgb(145, 145, 145);
 }
 
 .favButton {
-  background-color: pink;
+  background-color: rgb(190, 190, 190);
   color: black;
   padding: 10px;
+  
 }
 
 
 .favButton.favorited {
-  background-color: #e74c3c;
+  background-color: #ffcbc5;
 }

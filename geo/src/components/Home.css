@@ -30,7 +30,7 @@ body {
 }
 
 .homeBtn:hover {
-    color: white; /* Text color changed to white on hover */
+    color: white; 
 }
 
 .homeBtn::before {
