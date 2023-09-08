@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import LandmarkCard from "./LandmarkCard";
 
-function Favorites({handleFavorite, favLocations, setNewFavLocations, deleteFavoriteLocation}) {
+function Favorites({handleFavorite, favLocations, setNewFavLocations, deleteFavoriteLocation, deleteLocation}) {
 
     useEffect(() => {
       fetch("http://127.0.0.1:6001/favorites")
@@ -22,6 +22,7 @@ function Favorites({handleFavorite, favLocations, setNewFavLocations, deleteFavo
         favorited={location.favorited}
         handleFavorite={handleFavorite}
         deleteFavoriteLocation={deleteFavoriteLocation}
+        deleteLocation={deleteLocation}
         id={location.id}
       />
     })

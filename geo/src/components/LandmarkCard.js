@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import './LandmarkCard.css';
 
-function LandmarkCard({ name, desc, country, image, linkUrl, favorited, id, handleFavorite, deleteFavoriteLocation, handleRemove }) {
-  const removeLoc = () => {
-    handleRemove(id)
-  }
+
+import './LandmarkCard.css'; 
+
+function LandmarkCard({name, desc, country, image, linkUrl, favorited, id, handleFavorite, deleteFavoriteLocation, deleteLocation}) {
+
 
   function handleClick() {
     fetch("http://127.0.0.1:6001/locations/" + id, {
@@ -40,26 +41,34 @@ function LandmarkCard({ name, desc, country, image, linkUrl, favorited, id, hand
 
   }
 
+
+  function handleDelete() {
+    fetch("http://127.0.0.1:6001/locations/" + id, {
+      method: "DELETE"
+    })
+    .then(response => response.json())
+    .then(() => {
+      fetch("http://127.0.0.1:6001/favorites/" + id, {
+        method: "DELETE"
+      })
+      .then(response => response.json())
+      .then(() => {
+        deleteLocation(id)
+      })
+    })
+  }
+
   return (
     <div className="cardStyle">
+
       <h2>{name}</h2>
       <img className="cardImg" src={image} alt={name}></img>
       <h3>{country}</h3>
       <p>{desc}</p>
       <link href={linkUrl}></link>
-
-      <button className={`favButton ${favorited ? 'favorited' : ''}`} onClick={handleClick}>
-        {favorited ? "♥ UNFAVORITE" : "♡ FAVORITE"}
-      </button>
-      <div>
-        <button className="deleteButton" onClick={removeLoc}> DELETE</button>
-      </div>
-    
-       <Link to={`/landmarks/${id}`}>View</Link>
-
-     
-
-
+      <button onClick={handleClick}>{favorited ? "♥ UNFAVORITE" : "♡ FAVORITE"}</button>
+      <Link to={`/landmarks/${id}`}>View</Link>
+      <button onClick={handleDelete}>DELETE</button>
     </div>
   )
 }
