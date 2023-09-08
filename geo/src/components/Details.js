@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import './Details.css'; // Import the CSS file
+import './Details.css'; 
 
 function Details() {
   const [location, setLocation] = useState({});

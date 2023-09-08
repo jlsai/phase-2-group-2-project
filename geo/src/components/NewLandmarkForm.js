@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import landmarks from '../images/landmarks.png';
+import './NewLandmarkForm.css';
 
 function NewLandmarkForm({addNewLocation}) {
 
@@ -40,17 +42,18 @@ function NewLandmarkForm({addNewLocation}) {
   }
 
   return (
-    <div>
+    <div className="form">
       <form onSubmit={handleSubmit}>
-        <input name="name_en" type="text" placeholder="ENTER NAME" value={location.name_en} onChange={handleChange}></input>
-        <input name="short_description_en" type="text" placeholder="ENTER DESCRIPTION" value={location.short_description_en} onChange={handleChange}></input>
-        <input name="image" type="text" placeholder="ENTER IMAGE" value={location.image} onChange={handleChange}></input>
-        <input name="category" type="text" placeholder="ENTER CATEGORY" value={location.category} onChange={handleChange}></input>
-        <input name="states_name_en" type="text" placeholder="ENTER COUNTRY" value={location.states_name_en} onChange={handleChange}></input>
-        <input name="region_en" type="text" placeholder="ENTER REGION" value={location.region_en} onChange={handleChange}></input>
-        <input name="longitude" type="text" placeholder="ENTER LONGITUDE" value={location.longitude} onChange={handleChange}></input>
-        <input name="latitude" type="text" placeholder="ENTER LATITUDE" value={location.latitude} onChange={handleChange}></input>
-        <input type="submit" value="submit"></input>
+      <img src={landmarks} className="logo3"></img>
+        <input className="form-child" name="name_en" type="text" placeholder="ENTER NAME" value={location.name_en} onChange={handleChange}></input>
+        <input className="form-child" name="short_description_en" type="text" placeholder="ENTER DESCRIPTION" value={location.short_description_en} onChange={handleChange}></input>
+        <input className="form-child" name="image" type="text" placeholder="ENTER IMAGE" value={location.image} onChange={handleChange}></input>
+        <input className="form-child" name="category" type="text" placeholder="ENTER CATEGORY" value={location.category} onChange={handleChange}></input>
+        <input className="form-child" name="states_name_en" type="text" placeholder="ENTER COUNTRY" value={location.states_name_en} onChange={handleChange}></input>
+        <input className="form-child" name="region_en" type="text" placeholder="ENTER REGION" value={location.region_en} onChange={handleChange}></input>
+        <input className="form-child" name="longitude" type="text" placeholder="ENTER LONGITUDE" value={location.longitude} onChange={handleChange}></input>
+        <input className="form-child" name="latitude" type="text" placeholder="ENTER LATITUDE" value={location.latitude} onChange={handleChange}></input>
+        <input className="submit" type="submit" value="submit"></input>
       </form>
     </div>
   )
