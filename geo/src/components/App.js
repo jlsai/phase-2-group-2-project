@@ -5,8 +5,6 @@ import landmarks from '../images/landmarks.png'
 import Home from './Home';
 import Header from './Header';
 import LandmarkPage from './LandmarkPage';
-import Visited from './Visited';
-import Profile from './Profile';
 import Favorites from './Favorites';
 import NewLandmarkForm from './NewLandmarkForm';
 import Details from "./Details";
@@ -36,6 +34,23 @@ function App() {
       return location.id !== deletedLocation.id;
     })
     setFavLocations(newFavLocations)
+  }
+
+  const handleRemove = (id) => {
+    fetch("http://localhost:6001/locations" + "/" + id, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+      .then(r => {
+        if (r.ok) {
+          const newLocations = locations.filter((location) => {
+            return location.id !== id
+          })
+          setLocations(newLocations)
+        }
+      })
   }
 
 	function handleFavorite(newLocation) {
@@ -81,12 +96,14 @@ function App() {
     <Header />
     <div className="App">
       <Routes>
+
         <Route exact path="/" element={<Home/>}/>
         <Route path="/visited" element={<Visited/>}/>
         <Route path="/Form" element={<NewLandmarkForm addNewLocation={addNewLocation}/>}/>
         <Route path="/landmarks" element={<LandmarkPage modifiedLocations={modifiedLocations} searchChange={searchChange} handleFavorite={handleFavorite} search={search} deleteFavoriteLocation={deleteFavoriteLocation} deleteLocation={deleteLocation}/>}/>
         <Route path="/profile" element={<Profile currFavorites={currFavorites}/>}/>
         <Route path="/Favorites" element={<Favorites handleFavorite={handleFavorite} setNewFavLocations={setNewFavLocations} deleteFavoriteLocation={deleteFavoriteLocation} favLocations={favLocations} deleteLocation={deleteLocation}/>}/>
+
         <Route path="/landmarks/:id" element={<Details />}/>
         <Route path="/map" element={<MyMap />} />
         </Routes>
