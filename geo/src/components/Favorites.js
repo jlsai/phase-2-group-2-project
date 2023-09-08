@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import LandmarkCard from "./LandmarkCard";
+import './Favorites.css'; 
 
 function Favorites({handleFavorite, favLocations, setNewFavLocations, deleteFavoriteLocation, deleteLocation}) {
 
@@ -28,7 +29,9 @@ function Favorites({handleFavorite, favLocations, setNewFavLocations, deleteFavo
     })
     
     return (
-      <div>{displayLocations}</div>
+      <div className="container-fav">
+      <div className="fav-container">{displayLocations}</div>
+      </div>
     )
   }
   

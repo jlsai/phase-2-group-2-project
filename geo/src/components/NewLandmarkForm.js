@@ -1,8 +1,11 @@
 import React, {useState} from "react";
 import landmarks from '../images/landmarks.png';
 import './NewLandmarkForm.css';
+import { useNavigate } from "react-router-dom";
 
 function NewLandmarkForm({addNewLocation}) {
+
+  const navigate = useNavigate()
 
   const initial = {
       "favorited": false,
@@ -36,6 +39,7 @@ function NewLandmarkForm({addNewLocation}) {
     })
     .then(response => response.json())
     .then(data => {
+      navigate(`/landmarks/${data.id}`)
       addNewLocation(data)
       setLocation(initial)
     })
@@ -43,7 +47,7 @@ function NewLandmarkForm({addNewLocation}) {
 
   return (
     <div className="form">
-      
+
       <form onSubmit={handleSubmit}>
       <img src={landmarks} className="logo3"></img>
         <input className="form-child" name="name_en" type="text" placeholder="ENTER NAME" value={location.name_en} onChange={handleChange}></input>
@@ -52,8 +56,8 @@ function NewLandmarkForm({addNewLocation}) {
         <input className="form-child" name="category" type="text" placeholder="ENTER CATEGORY" value={location.category} onChange={handleChange}></input>
         <input className="form-child" name="states_name_en" type="text" placeholder="ENTER COUNTRY" value={location.states_name_en} onChange={handleChange}></input>
         <input className="form-child" name="region_en" type="text" placeholder="ENTER REGION" value={location.region_en} onChange={handleChange}></input>
-        <input className="form-child" name="longitude" type="text" placeholder="ENTER LONGITUDE" value={location.longitude} onChange={handleChange}></input>
         <input className="form-child" name="latitude" type="text" placeholder="ENTER LATITUDE" value={location.latitude} onChange={handleChange}></input>
+        <input className="form-child" name="longitude" type="text" placeholder="ENTER LONGITUDE" value={location.longitude} onChange={handleChange}></input>
         <input className="submit" type="submit" value="submit"></input>
       </form>
     </div>
