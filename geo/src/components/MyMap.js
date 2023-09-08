@@ -18,7 +18,7 @@ function MyMap({lat, long}) {
   })
 
   return (
-    <MapContainer id="map" center={[lat, long]} zoom={12}>
+    <MapContainer id="map" center={[lat, long]} zoom={7}>
 
       <TileLayer
         url={"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"}

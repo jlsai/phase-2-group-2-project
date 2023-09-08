@@ -69,13 +69,26 @@
 }
 
 .favButton {
-  background-color: rgb(190, 190, 190);
-  color: black;
-  padding: 10px;
-  
+  border: 2px solid rgb(255, 255, 255);
+  font-size: 12px;
+  padding: 5px;
+  background-color: rgb(226, 226, 226);
+  color: rgb(0, 0, 0);
+
 }
 
 
 .favButton.favorited {
   background-color: #ffcbc5;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Optional: Center align buttons horizontally */
+}
+
+.btn-container button,
+.btn-container a {
+  margin: 5px; /* Optional: Add some spacing between buttons */
 }

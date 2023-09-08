@@ -60,15 +60,19 @@ function LandmarkCard({name, desc, country, image, linkUrl, favorited, id, handl
 
   return (
     <div className="cardStyle">
-
-      <h2>{name}</h2>
-      <img className="cardImg" src={image} alt={name}></img>
-      <h3>{country}</h3>
-      <p>{desc}</p>
-      <link href={linkUrl}></link>
-      <button onClick={handleClick}>{favorited ? "♥ UNFAVORITE" : "♡ FAVORITE"}</button>
-      <Link to={`/landmarks/${id}`}>View</Link>
-      <button onClick={handleDelete}>DELETE</button>
+      <div>
+        <h2>{name}</h2>
+        <img className="cardImg" src={image} alt={name}></img>
+        <h3>{country}</h3>
+        <p>{desc}</p>
+        <link href={linkUrl}></link>
+        
+      </div>
+      <div className="btn-container">
+        <button className="favButton" onClick={handleClick}>{favorited ? "♥ UNFAVORITE" : "♡ FAVORITE"}</button>
+        <Link to={`/landmarks/${id}`}>View</Link>
+        <button className="deleteButton" onClick={handleDelete}>DELETE</button>
+      </div>
     </div>
   )
 }

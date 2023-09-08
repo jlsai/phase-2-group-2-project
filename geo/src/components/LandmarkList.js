@@ -17,7 +17,6 @@ function LandmarkList({locations,  handleFavorite, deleteFavoriteLocation, delet
       deleteFavoriteLocation={deleteFavoriteLocation}
       deleteLocation={deleteLocation}
       id={location.id}
-      handleRemove={handleRemove}
 
     />
   })

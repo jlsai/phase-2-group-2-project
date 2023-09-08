@@ -1,0 +1,16 @@
+.container-fav {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.fav-container {
+    font-family: Nexa-Heavy;
+    max-width: 10000px;
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Create a 4-column grid */
+    gap: 20px; /* Optional: Add some spacing between grid items */
+  }
+  
