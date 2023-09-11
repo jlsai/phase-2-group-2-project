@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/phase-2-group-2-project/static/css/main.8bfab28e.css",
+    "main.js": "/phase-2-group-2-project/static/js/main.691a4b2c.js",
+    "static/js/787.f755fea4.chunk.js": "/phase-2-group-2-project/static/js/787.f755fea4.chunk.js",
+    "static/media/Nexa-Heavy.ttf": "/phase-2-group-2-project/static/media/Nexa-Heavy.13e16a1c3c48dd492fa9.ttf",
+    "static/media/Nexa-ExtraLight.ttf": "/phase-2-group-2-project/static/media/Nexa-ExtraLight.2e3441a81090afda5785.ttf",
+    "static/media/landmarks.png": "/phase-2-group-2-project/static/media/landmarks.26cc68e337e23cc7ad38.png",
+    "static/media/profile.png": "/phase-2-group-2-project/static/media/profile.6dc4b82c86e5a5178bfc.png",
+    "static/media/star.png": "/phase-2-group-2-project/static/media/star.b025d2c46ee97aefe97d.png",
+    "index.html": "/phase-2-group-2-project/index.html",
+    "main.8bfab28e.css.map": "/phase-2-group-2-project/static/css/main.8bfab28e.css.map",
+    "main.691a4b2c.js.map": "/phase-2-group-2-project/static/js/main.691a4b2c.js.map",
+    "787.f755fea4.chunk.js.map": "/phase-2-group-2-project/static/js/787.f755fea4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8bfab28e.css",
+    "static/js/main.691a4b2c.js"
+  ]
+}
